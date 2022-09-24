@@ -1,0 +1,330 @@
+ 
+ 
+ <!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+
+<script src="table2excel.js">
+
+
+
+</script>
+<link href="/Contents/css/bootstrap.css" rel="stylesheet" type="text/css" />
+<link href="/Contents/css/pushmenu.css" rel='stylesheet' type='text/css' />
+<link href="/Contents/css/simple-line-icons.css" rel='stylesheet' type='text/css' />
+<link href="/Contents/css/mbExtruder.css" rel='stylesheet' type='text/css' />
+<link href="/Contents/assets/js/google-code-prettify/prettify.css" rel="stylesheet" />    
+<link rel="stylesheet" type="text/css" href="../../Contents/font-awesome.min.css" />
+<link href="../../Contents/css/Print.css" rel="stylesheet" media="print" type="text/css" />
+<link href="../../Contents/msgBoxLight.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../../Scripts/jquery-1.11.1.min.js"></script>
+<script src="../../Scripts/jquery.min.js" type="text/javascript"></script>
+<script src="../../Scripts/jquery-ui.js" type="text/javascript"></script>
+<script src="../../Scripts/jquery.msgBox.js" type="text/javascript"></script>
+<script src="../../Scripts/ValidationScripts.js" type="text/javascript"></script>
+
+
+<style>
+
+
+
+	
+	.glow-on-hover {
+		width: 60px;
+		height: 50px;
+		border: none;
+		outline: none;
+		color: #fff;
+		background: #111;
+		cursor: pointer;
+		position: relative;
+		z-index: 0;
+		border-radius: 10px;
+	}
+	
+	.glow-on-hover:before {
+		content: '';
+		background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+		position: absolute;
+		top: -2px;
+		left:-2px;
+		background-size: 400%;
+		z-index: -1;
+		filter: blur(5px);
+		width: calc(100% + 4px);
+		height: calc(100% + 4px);
+		animation: glowing 20s linear infinite;
+		opacity: 0;
+		transition: opacity .3s ease-in-out;
+		border-radius: 10px;
+	}
+	
+	.glow-on-hover:active {
+		color: #000
+	}
+	
+	.glow-on-hover:active:after {
+		background: transparent;
+	}
+	
+	.glow-on-hover:hover:before {
+		opacity: 1;
+	}
+	
+	.glow-on-hover:after {
+		z-index: -1;
+		content: '';
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		background: #111;
+		left: 0;
+		top: 0;
+		border-radius: 10px;
+	}
+	
+	@keyframes glowing {
+		0% { background-position: 0 0; }
+		50% { background-position: 400% 0; }
+		100% { background-position: 0 0; }
+	}
+	
+
+
+
+
+    * {
+        font-family: sans-serif; /* Change your font family */
+      }
+      
+      .content-table {
+        border-collapse: collapse;
+        margin: 25px 0;
+        font-size: 0.9em;
+        min-width: 400px;
+        border-radius: 5px 5px 0 0;
+        overflow: hidden;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+      }
+      
+      .content-table thead tr {
+        background-color: #009879;
+        color: #ffffff;
+        text-align: left;
+        font-weight: bold;
+      }
+      
+      .content-table th,
+      .content-table td {
+        padding: 12px 15px;
+      }
+      
+      .content-table tbody tr {
+        border-bottom: 1px solid #dddddd;
+      }
+      
+      .content-table tbody tr:nth-of-type(even) {
+        background-color: #f3f3f3;
+      }
+      
+      .content-table tbody tr:last-of-type {
+        border-bottom: 2px solid #009879;
+      }
+      
+      .content-table tbody tr.active-row {
+        font-weight: bold;
+        color: #009879;
+      }
+      
+</style>
+
+
+</head>
+<body>
+ 
+
+
+
+
+
+</ul>
+
+         <!-- <ul class='print'><li ><a target='_blank' class='fa fa-print' href='/Site/1120/Projects---Registration-Revoked-or-Ab-initio-void?format=print' onclick="window.print();"><span>Print</span></a></li></ul> -->
+
+     <div class="clearfix">
+                </div>
+</div>    <h1 >
+        Projects - Registration Revoked or Ab initio void  <button style="padding-left: 10px" class="glow-on-hover" id="downloadexcel"> <img src="./pdf.png" height ="25" width="30"/></button>
+		<button style="padding-left: 10px" target='_blank' class="glow-on-hover" class='print' href='/Site/1120/Projects---Registration-Revoked-or-Ab-initio-void?format=print' onclick="window.print();"> <img src="./print.png" height ="35" width="40"/></button>
+    </h1>  
+
+
+    <div class="content">
+<table id="example-table"  class="table table-bordered content-table">
+	<tbody>
+		<thead>
+		<tr>
+			<th>Sr.No.</th>
+			<th>Project Name</th>
+			<th>Promoter Name</th>
+			<th>View Revocation Certificate/Order</th>
+			
+		</tr>
+	</thead>
+		<tr >
+			<td>1</td>
+			<td>MITHA NAGAR ARCHANA CHS LTD</td>
+			<td>DHANSHREE DEVELOPERS PVT LTD</td>
+			<td><a href="https://maharera.mahaonline.gov.in/Site/Upload/Pdf/Revocation Certificate - MITHA NAGAR ARCHANA CHS LTD - DHANSHREE DEVELOPERS PVT LTD.pdf" target="_blank">
+				<button ><img src="./some.png" height ="20" width="20"/><h1 style="content-visibility: hidden  ;   font-size: 1px;">https://maharera.mahaonline.gov.in/Site/Upload/Pdf/Revocation Certificate - MITHA NAGAR ARCHANA CHS LTD - DHANSHREE DEVELOPERS PVT LTD.pdf</h1>
+			</a></td>
+			<!-- <td><h6 style="visibility: hidden;">https://maharera.mahaonline.gov.in/Site/Upload/Pdf/Revocation Certificate - MITHA NAGAR ARCHANA CHS LTD - DHANSHREE DEVELOPERS PVT LTD.pdf</h6></a></td> -->
+			
+		</tr>
+		<tr>
+			<td>2</td>
+			<td>DSK SADAPHULI</td>
+			<td>DSKULKARNIANDCOMPANY</td>
+			<td><a href="https://maharera.mahaonline.gov.in/Upload/PDF/Revocation Certificate - DSK SADAPHULI - DSKULKARNIANDCOMPANY.pdf" target="_blank"><button ><img src="./some.png" height ="20" width="20"/><h1 style="content-visibility: hidden  ;   font-size: 1px;">https://maharera.mahaonline.gov.in/Upload/PDF/Revocation Certificate - DSK SADAPHULI - DSKULKARNIANDCOMPANY.pdf</h1></button></a></td>
+			<!-- <td><h6 style="visibility: hidden;">https://maharera.mahaonline.gov.in/Upload/PDF/Revocation Certificate - DSK SADAPHULI - DSKULKARNIANDCOMPANY.pdf</h6></a></td> -->
+			
+		</tr>
+		<tr >
+			<td>3</td>
+			<td>DSK SADAPHULI</td>
+			<td>DSK WORLDMAN PROJECTS LIMITED</td>
+			<td><a href="https://maharera.mahaonline.gov.in/Upload/PDF/Revocation Certificate - DSK SADAPHULI - DSK WORLDMAN PROJECTS LIMITED.pdf" target="_blank"><button ><img src="./some.png" height ="20" width="20"/><h1 style="content-visibility: hidden  ;   font-size: 1px;">https://maharera.mahaonline.gov.in/Upload/PDF/Revocation Certificate - DSK SADAPHULI - DSK WORLDMAN PROJECTS LIMITED.pdf</h1></button></a></td>
+			<!-- <td><h6 style="visibility: hidden;">https://maharera.mahaonline.gov.in/Upload/PDF/Revocation Certificate - DSK SADAPHULI - DSK WORLDMAN PROJECTS LIMITED.pdf</h6></a></td> -->
+			
+		</tr>
+		<tr>
+			<td>4</td>
+			<td>Laaffaires Avenue Commercial and Laflor Residency Commercial</td>
+			<td>SSV Realtors</td>
+			<td><a href="https://maharera.mahaonline.gov.in/Site/Upload/Pdf/CC 006 100383 Ashthvinayak SRA CHS.pdf" target="_blank">
+				<button ><img src="./some.png" height ="20" width="20"/><h1 style="content-visibility: hidden  ;   font-size: 1px;">https://maharera.mahaonline.gov.in/Site/Upload/Pdf/CC 006 100383 Ashthvinayak SRA CHS.pdf</h1>
+		
+			</button></a></td>
+			<!-- <td><h6 style="visibility: hidden;">https://maharera.mahaonline.gov.in/Site/Upload/Pdf/CC 006 100383 Ashthvinayak SRA CHS.pdf</h6></a></td> -->
+			
+		</tr>
+		<tr >
+			<td>5</td>
+			<td>SAI BUILDERS AND DEVELOPERS</td>
+			<td>SHIVSAGAR GURUCHARAN YADAV</td>
+			<td><a href="https://maharera.mahaonline.gov.in/Site/Upload/Pdf/P51700026614.pdf" target="_blank">
+				<button ><img src="./some.png" height ="20" width="20"/><h1 style="content-visibility: hidden  ;   font-size: 1px;">https://maharera.mahaonline.gov.in/Site/Upload/Pdf/P51700026614.pdf</h1>
+		
+			</button></a></td>
+			<!-- <td><h6 style="visibility: hidden;">https://maharera.mahaonline.gov.in/Site/Upload/Pdf/P51700026614.pdf</h6></a></td> -->
+			
+		</tr>
+		<tr>
+			<td>6</td>
+			<td>Ganeshwadi CHS LTD - S.R.A</td>
+			<td>Ashok Rajaram Gupta</td>
+			<td><a href="https://maharera.mahaonline.gov.in/Site/Upload/Pdf/P51800010062.pdf" target="_blank">
+				<button ><img src="./some.png" height ="20" width="20"/><h1 style="content-visibility: hidden  ;   font-size: 1px;">https://maharera.mahaonline.gov.in/Site/Upload/Pdf/P51800010062.pdf</h1>
+		
+			</button></a></td>
+			<!-- <td><h6 style="visibility: hidden;">https://maharera.mahaonline.gov.in/Site/Upload/Pdf/P51800010062.pdf</h6></a></td> -->
+			
+		</tr>
+		<tr >
+			<td>7</td>
+			<td>
+			<p>Rite Civis</p>
+			</td>
+			<td>
+			<p>Yashodanand Developers</p>
+			</td>
+			<td><a href="https://maharera.mahaonline.gov.in/Site/Upload/Pdf/P51800030301.pdf" target="_blank">
+				<button ><img src="./some.png" height ="20" width="20"/><h1 style="content-visibility: hidden  ;   font-size: 1px;">https://maharera.mahaonline.gov.in/Site/Upload/Pdf/P51800030301.pdf</h1>
+		
+			</button></a></td>
+			<!-- <td><h6 style="visibility: hidden;">https://maharera.mahaonline.gov.in/Site/Upload/Pdf/P51800030301.pdf</h6></a></td> -->
+			
+		</tr>
+		<tr>
+			<td>8</td>
+			<td>
+			<p>Hari Om Villa</p>
+			</td>
+			<td>
+			<p>Maheshkumar Chunilal Shah</p>
+			</td>
+			<td><a href="https://maharera.mahaonline.gov.in/Site/Upload/Pdf/P99000020705.pdf" target="_blank">
+				<button ><img src="./some.png" height ="20" width="20"/><h1 style="content-visibility: hidden  ;   font-size: 1px;">https://maharera.mahaonline.gov.in/Site/Upload/Pdf/P99000020705.pdf</h1>
+		
+			</button></a></td>
+			<!-- <td><h6 style="visibility: hidden;">https://maharera.mahaonline.gov.in/Site/Upload/Pdf/P99000020705.pdf</h6></a></td> -->
+			
+		</tr>
+		<tr >
+			<td>9</td>
+			<td>JANAVI PLAZA, JANAVI TOWER</td>
+			<td>JANAVI BUILDERS &amp; DEVELOPERS</td>
+			<td><a href="https://maharera.mahaonline.gov.in/Site/Upload/Pdf/Order Janavi Plaza dated 24-11-2021.pdf" target="_blank">
+				<button ><img src="./some.png" height ="20" width="20"/><h1 style="content-visibility: hidden  ;   font-size: 1px;">https://maharera.mahaonline.gov.in/Site/Upload/Pdf/Order Janavi Plaza dated 24-11-2021.pdf</h1>
+		
+			</button></a></td>
+			<!-- <td><h6 style="visibility: hidden;">https://maharera.mahaonline.gov.in/Site/Upload/Pdf/Order Janavi Plaza dated 24-11-2021.pdf</h6></a></td> -->
+			
+		</tr>
+		<tr>
+			<td>10</td>
+			<td>Mangal Smriti</td>
+			<td>MANGAL BUILDHOME PRIVATE LIMITED</td>
+			<td><a href="https://maharera.mahaonline.gov.in/Site/Upload/Pdf/P51800028224.pdf" target="_blank">
+				<button ><img src="./some.png" height ="20" width="20"/><h1 style="content-visibility: hidden  ;   font-size: 1px;">https://maharera.mahaonline.gov.in/Site/Upload/Pdf/P51800028224.pdf</h1>
+		
+			</button></a></td>
+			<!-- <td><h6 style="visibility: hidden;">https://maharera.mahaonline.gov.in/Site/Upload/Pdf/P51800028224.pdf</h6></a></td> -->
+			
+		</tr>
+		<tr >
+			<td>11</td>
+			<td>VARDHMAN PEARL</td>
+			<td>DIWALI DEVELOPERS</td>
+			<td><a href="https://maharera.mahaonline.gov.in/Site/Upload/Pdf/Order-SM220-2022 signed.pdf" target="_blank">
+				<button ><img src="./some.png" height ="20" width="20"/><h1 style="content-visibility: hidden  ;   font-size: 1px;">https://maharera.mahaonline.gov.in/Site/Upload/Pdf/Order-SM220-2022 signed.pdf</h1>
+		
+			</button></a></td>
+			<!-- <td><h6 style="visibility: hidden;">https://maharera.mahaonline.gov.in/Site/Upload/Pdf/Order-SM220-2022 signed.pdf</h6></a></td> -->
+			
+		</tr>
+	</tbody>
+</table>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+	document.getElementById('downloadexcel').addEventListener('click',function(){
+
+		var table2excel = new Table2Excel();
+		table2excel.export(document.querySelectorAll("#example-table"));
+
+
+	});
+</script>
+</div>
+</div>
+</div>
+
+
+</body>
+</html>
